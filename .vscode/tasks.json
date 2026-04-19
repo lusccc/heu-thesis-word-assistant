@@ -1,0 +1,34 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile: Thesis (Linux/WSL)",
+      "type": "shell",
+      "command": "bash compile_thesis_linux.sh",
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "detail": "Linux / WSL 环境编译",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    },
+    {
+      "label": "Compile: Thesis (Windows)",
+      "type": "shell",
+      "command": "compile_thesis_windows.bat",
+      "group": "build",
+      "detail": "Windows 环境编译",
+      "presentation": {
+        "reveal": "always",
+        "panel": "dedicated",
+        "clear": true
+      },
+      "problemMatcher": []
+    }
+  ]
+}
